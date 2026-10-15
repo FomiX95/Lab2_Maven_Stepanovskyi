@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: hello.HelloWorldConfigurationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.129 s <<< FAILURE! -- in hello.HelloWorldConfigurationTests
+hello.HelloWorldConfigurationTests.testGreeting -- Time elapsed: 0.498 s <<< FAILURE!
+java.lang.AssertionError: Response body expected:<Hello Docker World> but was:<<html><body><h1>Калькулятор</h1><form action='/calc' method='get'><input type='text' name='expr' placeholder='Наприклад: 2+2*2' required><button type='submit'>Порахувати</button></form></body></html>>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:62)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:129)
+	at org.springframework.test.web.servlet.client.DefaultRestTestClient$DefaultBodySpec.lambda$isEqualTo$0(DefaultRestTestClient.java:408)
+	at org.springframework.test.web.servlet.client.ExchangeResult.assertWithDiagnostics(ExchangeResult.java:221)
+	at org.springframework.test.web.servlet.client.DefaultRestTestClient$DefaultBodySpec.isEqualTo(DefaultRestTestClient.java:407)
+	at hello.HelloWorldConfigurationTests.testGreeting(HelloWorldConfigurationTests.java:40)
+
